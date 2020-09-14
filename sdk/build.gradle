@@ -34,11 +34,15 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
 
-    implementation "com.ms:module-super:debug-latest"
     // mmkv
-    implementation 'com.tencent:mmkv-static:1.1.1'
+    implementation 'com.tencent:mmkv-static:1.2.2'
+
+    releaseImplementation "com.ms:android-module-super:latest-RELEASE"
+    debugImplementation "com.ms:android-module-super:latest-DEBUG"
+
+
 
 
 }
 
-apply from:"./mavenpublish_local.gradle"
+apply from: "./maven_publish.gradle"
